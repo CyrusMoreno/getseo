@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyrus E. Moreno - SEO Expert</title>
+    <!-- Add link to your CSS file here -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background: #ddd;
+            color: black;
+        }
+
+        #about, #contact {
+            display: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        @media screen and (max-width: 600px) {
+              .container {
+                   max-width: 100%;
+                   font-size: 16px;
+            }
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            $("#home, #about, #contact").hide();
+
+            // Show the clicked section
+            $("#" + sectionId).show();
+        }
+    </script>
+   
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="navbar">
+        <a id="home-link" href="#home" onclick="showSection('home')">Home</a>
+        <a id="about-link" href="#about" onclick="showSection('about')">About</a>
+        <a id="contact-link" href="#contact" onclick="showSection('contact')">Contact</a>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+        <h2>Welcome to My Page!</h2>
+        <p>
+          I'm excited to share my ongoing project with you. I'm currently working on improving the SEO for a PC gaming blog, www.example.com. The owner of the site recently decided to start blogging about PC gaming, a topic with a large and passionate audience.
+        </p>
+        <p>
+          My goal is to increase the site's traffic by optimizing its content for search engines. I'm using the latest SEO strategies and techniques that I've learned from Google's developer documentation. I'm confident that these efforts will lead to a significant increase in traffic over time.
+        </p>
+        <p>
+          Below, you can see the current traffic statistics for the site. I'll be updating these stats regularly to track the progress of my SEO efforts. Stay tuned to see how the site's traffic grows!
+        </p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+              Hello! I'm an aspiring SEO expert, passionate about helping businesses improve their online presence and search engine rankings. My journey in SEO started with the comprehensive developer documentation provided by Google, where I gained a solid understanding of the principles and best practices of SEO.
+            </p>
+            <p>
+              While I'm relatively new to the field, I'm eager to apply what I've learned in a real-world context. I believe that the best way to learn is by doing, and I'm excited to gain hands-on experience and see the tangible impact of my efforts.
+            </p>
+            <p>
+              I'm committed to staying up-to-date with the latest SEO trends and strategies to ensure that I provide the most effective solutions. I look forward to helping you enhance your website's visibility and reach your business goals.
+            </p>
+        </div>
+    </section>
+
+ 
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+        <h2>Contact Me</h2>
+        <p>
+          I'd love to hear from you! Whether you have a question about my work, need SEO services, or just want to connect, feel free to reach out to me.
+        </p>
+        <p>
+          You can find me on LinkedIn and Twitter. Click the links below to visit my profiles:
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/cyrusemoreno/" target="_blank">LinkedIn</a>
+        </p>
+        <p>
+          <a href="https://twitter.com/CyrusEMoreno" target="_blank">Twitter</a>
+        </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Add content here -->
+    </footer>
+</body>
+</html>
